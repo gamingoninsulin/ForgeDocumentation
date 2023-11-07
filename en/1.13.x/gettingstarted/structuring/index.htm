@@ -1,0 +1,1115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Structuring Your Mod - Forge Documentation</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_manifest.json">
+    <link rel="mask-icon" href="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Forge Docs">
+    <meta name="application-name" content="Forge Docs">
+    <meta name="msapplication-config" content="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="../../../../a1f20be65b-1.css">
+    <link rel="stylesheet" href="../../css/styles_dark.css?version=2" data-theme="dark">
+    <link rel="stylesheet" href="../../css/styles_light.css?version=2" data-theme="light">
+
+    
+    <link href="../../../../static/css/badge_only-1.css" rel="stylesheet">
+    
+    <link href="../../../../static/css/readthedocs-doc-embed-1.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="../../js/theme-switch.js"></script>
+
+    <script type="text/javascript" src="../../../../ajax/libs/jquery/2.2.4/jquery.min-1.js"></script>
+    <script type="text/javascript" src="../../../../ajax/libs/highlight.js/9.12.0/highlight.min-1.js"></script>
+    <script type="text/javascript" src="../../../../ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min-1.js"></script>
+    <script type="text/javascript" src="../../../../ajax/libs/jScrollPane/2.0.23/script/jquery.jscrollpane.min-1.js"></script>
+    <script type="text/javascript" src="../../../../ajax/libs/stickyfill/1.1.4/stickyfill.min-1.js"></script>
+    <script type="text/javascript" src="../../js/theme.js"></script>
+
+    <script>var base_url = '../..';</script>
+    
+    <script src="../../readthedocs-data.js"></script>
+    
+    <script src="../../../../static/core/js/readthedocs-doc-embed-1.js"></script>
+    
+    <script src="../../../../static/javascript/readthedocs-analytics-1.js"></script>
+    
+    <script src="../../search/require.js"></script>
+    
+    <script src="../../search/search.js"></script>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="#" class="open-sidebar"><i class="fa fa-bars"></i></a>
+            <a href="../../index.htm" class="logo-image"><img src="../../images/logo.svg" width="244"></a>
+        </div>
+        <nav>
+            <ul class="links clearfix">
+                <li><a href="https://minecraftforge.net/">Forums</a></li>
+            </ul>
+        </nav>
+        
+        <form class="search" action="../../search.html" method="get">
+            <input type="submit" value="&#xf002;">
+            <div class="search-field">
+                <input type="search" title="Search" name="q" placeholder="Search...">
+            </div>
+        </form>
+        
+    </div>
+</header>
+<main class="wrapper sidebar-wrapper">
+    <div class="sidebar-left sidebar-sticky">
+        <aside>
+            <section class="sidebar-nav">
+                <h2 class="sidebar-heading">
+                    <a href="#" class="close-sidebar"><i class="fa fa-bars"></i></a> Navigation
+                    <form class="version-selection">
+                        <label for="version-selection-dropdown">Version:</label>
+                        <select id="version-selection-dropdown" class="version-selection-dropdown" onchange="location = this.value;">
+                            
+                            <option value="https://mcforge.readthedocs.io/en/1.13.x" selected="">1.13.x</option>
+                            
+                            <option value="https://mcforge.readthedocs.io/en/latest">1.12.x</option>
+                            
+                        </select>
+                    </form>
+                </h2>
+                <ul class="section-content scroll-pane">
+                    
+                    
+<li>
+    
+    <a href="../../index.htm" class="elem-text">Home</a>
+    
+    
+</li>
+
+                    
+                    
+<li>
+    
+    <a href="../../styleguide/index.htm" class="elem-text">Style Guide</a>
+    
+    
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Getting Started</a>
+    
+    <ul class="nav-collapsible nav-collapsible-open">
+        
+        
+<li>
+    
+    <a href="../index.htm" class="elem-text">Home</a>
+    
+    
+</li>
+
+        
+        
+<li class="elem-active elem-toc">
+    
+    <a href="#structuring-your-mod" class="elem-text">Structuring Your Mod</a>
+    
+    
+    <ul class="table-of-contents">
+        
+        
+        
+        <li class="toc-subitem"><a href="#packaging">Packaging</a></li>
+        
+        <li class="toc-subitem"><a href="#the-mcmodinfo-file">The mcmod.info file</a></li>
+        
+        <li class="toc-subitem"><a href="#the-mod-file">The Mod File</a></li>
+        
+        <li class="toc-subitem"><a href="#what-is-mod">What is @Mod?</a></li>
+        
+        <li class="toc-subitem"><a href="#keeping-your-code-clean-using-sub-packages">Keeping Your Code Clean Using Sub-packages</a></li>
+        
+        <li class="toc-subitem"><a href="#class-naming-schemes">Class Naming Schemes</a></li>
+        
+        
+    </ul>
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../autoupdate/index.htm" class="elem-text">Forge Update Checker</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../dependencymanagement/index.htm" class="elem-text">Dependency Management</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../debugprofiler/index.htm" class="elem-text">Debug Profiler</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Concepts</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../concepts/sides/index.htm" class="elem-text">Sides</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../concepts/resources/index.htm" class="elem-text">Resources</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../concepts/registries/index.htm" class="elem-text">Registries</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../concepts/jarsigning/index.htm" class="elem-text">The Fingerprint Violation Event</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../concepts/internationalization/index.htm" class="elem-text">Internationalization and localization</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Blocks</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../blocks/blocks/index.htm" class="elem-text">Home</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../blocks/states/index.htm" class="elem-text">Intro to Blockstates</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../blocks/interaction/index.htm" class="elem-text">Interaction</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Animation API</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../animation/intro/index.htm" class="elem-text">Intro to the Animation API</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../animation/armature/index.htm" class="elem-text">Armatures</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../animation/asm/index.htm" class="elem-text">Animation State Machines</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../animation/implementing/index.htm" class="elem-text">Using the API</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Tile Entities</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../tileentities/tileentity/index.htm" class="elem-text">Home</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../tileentities/tesr/index.htm" class="elem-text">Renderer</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Items</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../items/items/index.htm" class="elem-text">Home</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../items/loot_tables/index.htm" class="elem-text">Loot Tables</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Models</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../models/introduction/index.htm" class="elem-text">Intro to Models</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../models/files/index.htm" class="elem-text">Model Files</a>
+    
+    
+</li>
+
+        
+        
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Blockstates</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../models/blockstates/introduction/index.htm" class="elem-text">Intro to Blockstate JSONs</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../models/blockstates/forgeBlockstates/index.htm" class="elem-text">Forge Blockstate JSON</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../models/using/index.htm" class="elem-text">Connecting Blocks and Items to Models</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../models/color/index.htm" class="elem-text">Coloring Textures</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../models/overrides/index.htm" class="elem-text">Item Property Overrides</a>
+    
+    
+</li>
+
+        
+        
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Advanced Models</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../models/advanced/introduction/index.htm" class="elem-text">Intro to Advanced Models</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../models/advanced/imodel/index.htm" class="elem-text">IModel</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../models/advanced/imodelstate%20part/index.htm" class="elem-text">IModelState and IModelPart</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../models/advanced/ibakedmodel/index.htm" class="elem-text">IBakedModel</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../models/advanced/extended-blockstates/index.htm" class="elem-text">Extended Blockstates</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../models/advanced/perspective/index.htm" class="elem-text">Perspective</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../models/advanced/itemoverridelist/index.htm" class="elem-text">ItemOverrideList</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../models/advanced/icustommodelloader/index.htm" class="elem-text">ICustomModelLoader</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Rendering</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../rendering/teisr/index.htm" class="elem-text">TileEntityItemStackRenderer</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Events</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../events/intro/index.htm" class="elem-text">Basic Usage</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Networking</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../networking/index.htm" class="elem-text">Home</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../networking/overview/index.htm" class="elem-text">Overview</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../networking/simpleimpl/index.htm" class="elem-text">SimpleImpl</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../networking/entities/index.htm" class="elem-text">Entities</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Data Storage</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../datastorage/capabilities/index.htm" class="elem-text">Capabilities</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../datastorage/worldsaveddata/index.htm" class="elem-text">World Saved Data</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../datastorage/extendedentityproperties/index.htm" class="elem-text">Extended Entity Properties</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../config/annotations/index.htm" class="elem-text">Config Annotations</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Utilities</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../utilities/recipes/index.htm" class="elem-text">Recipes</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../utilities/tags/index.htm" class="elem-text">Tags</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../utilities/permissionapi/index.htm" class="elem-text">PermissionAPI</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Effects</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../effects/sounds/index.htm" class="elem-text">Sounds</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Conventions</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../conventions/versioning/index.htm" class="elem-text">Versioning</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../conventions/locations/index.htm" class="elem-text">Locations</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../conventions/loadstages/index.htm" class="elem-text">Loading Stages</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Contributing to Forge</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../forgedev/index.htm" class="elem-text">Getting Started</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../forgedev/prguidelines/index.htm" class="elem-text">PR Guidelines</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <div class="sidebar-sticky-wrapper-content">
+        <article class="docs-entry">
+            
+            <h1 id="structuring-your-mod">Structuring Your Mod<a class="headerlink" href="#structuring-your-mod" title="Permanent link"> </a></h1>
+<p>We&rsquo;ll look at how to organize your mod into different files and what those files should do.</p>
+<h2 id="packaging">Packaging<a class="headerlink" href="#packaging" title="Permanent link"> </a></h2>
+<p>Pick a unique package name. If you own a URL associated with your project, you can use it as your top level package. For example if you own &ldquo;example.com&rdquo;, you may use <code>com.example</code> as your top level package.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you do not own a domain, do not use it for your top level package. It is perfectly acceptable to start your package with anything, such as your name/nickname, or the name of the mod.</p>
+</div>
+<p>After the top level package (if you have one) you append a unique name for your mod, such as <code>examplemod</code>. In our case it will end up as <code>com.example.examplemod</code>.</p>
+<h2 id="the-mcmodinfo-file">The <code>mcmod.info</code> file<a class="headerlink" href="#the-mcmodinfo-file" title="Permanent link"> </a></h2>
+<p>This file defines the metadata of your mod. Its information may be viewed by users from the main screen of the game through the Mods button. A single info file can describe several mods. When a mod is annotated by the <code>@Mod</code> annotation, it may define the <code>useMetadata</code> property, which defaults to <code>false</code>. When <code>useMetadata</code> is <code>true</code>, the metadata within <code>mcmod.info</code> overrides whatever has been defined in the annotation.</p>
+<p>The <code>mcmod.info</code> file is formatted as JSON, where the root element is a list of objects and each object describes one modid. It should be stored as <code>src/main/resources/mcmod.info</code>. A basic <code>mcmod.info</code>, describing one mod, may look like this:</p>
+<pre class="highlight"><code>[{
+  "modid": "examplemod",
+  "name": "Example Mod",
+  "description": "Lets you craft dirt into diamonds. This is a traditional mod that has existed for eons. It is ancient. The holy Notch created it. Jeb rainbowfied it. Dinnerbone made it upside down. Etc.",
+  "version": "1.0.0.0",
+  "mcversion": "1.10.2",
+  "logoFile": "assets/examplemod/textures/logo.png",
+  "url": "minecraftforge.net/",
+  "updateJSON": "minecraftforge.net/versions.json",
+  "authorList": ["Author"],
+  "credits": "I'd like to thank my mother and father."
+}]
+</code></pre>
+
+<p>The default Gradle configuration replaces <code>${version}</code> with the project version, and <code>${mcversion}</code> with the Minecraft version, but <em>only</em> within <code>mcmod.info</code>, so you should use those instead of directly writing them out. Here is a table of attributes that may be given to a mod, where <code>required</code> means there is no default and the absence of the property causes an error. In addition to the required properties, you should also define <code>description</code>, <code>version</code>, <code>mcversion</code>, <code>url</code>, and <code>authorList</code>.</p>
+<table>
+<thead>
+<tr>
+<th align="right">Property</th>
+<th align="center">Type</th>
+<th align="center">Default</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">modid</td>
+<td align="center">string</td>
+<td align="center">required</td>
+<td align="left">The modid this description is linked to. If the mod is not loaded, the description is ignored.</td>
+</tr>
+<tr>
+<td align="right">name</td>
+<td align="center">string</td>
+<td align="center">required</td>
+<td align="left">The user-friendly name of this mod.</td>
+</tr>
+<tr>
+<td align="right">description</td>
+<td align="center">string</td>
+<td align="center"><code>""</code></td>
+<td align="left">A description of this mod in 1-2 paragraphs.</td>
+</tr>
+<tr>
+<td align="right">version</td>
+<td align="center">string</td>
+<td align="center"><code>""</code></td>
+<td align="left">The version of the mod.</td>
+</tr>
+<tr>
+<td align="right">mcversion</td>
+<td align="center">string</td>
+<td align="center"><code>""</code></td>
+<td align="left">The Minecraft version.</td>
+</tr>
+<tr>
+<td align="right">url</td>
+<td align="center">string</td>
+<td align="center"><code>""</code></td>
+<td align="left">A link to the mod&rsquo;s homepage.</td>
+</tr>
+<tr>
+<td align="right">updateUrl</td>
+<td align="center">string</td>
+<td align="center"><code>""</code></td>
+<td align="left">Defined but unused. Superseded by updateJSON.</td>
+</tr>
+<tr>
+<td align="right">updateJSON</td>
+<td align="center">string</td>
+<td align="center"><code>""</code></td>
+<td align="left">The URL to a <a href="../autoupdate/index.htm#forge-update-checker">version JSON</a>.</td>
+</tr>
+<tr>
+<td align="right">authorList</td>
+<td align="center">[string]</td>
+<td align="center"><code>[]</code></td>
+<td align="left">A list of authors to this mod.</td>
+</tr>
+<tr>
+<td align="right">credits</td>
+<td align="center">string</td>
+<td align="center"><code>""</code></td>
+<td align="left">A string that contains any acknowledgements you want to mention.</td>
+</tr>
+<tr>
+<td align="right">logoFile</td>
+<td align="center">string</td>
+<td align="center"><code>""</code></td>
+<td align="left">The path to the mod&rsquo;s logo. It is resolved on top of the classpath, so you should put it in a location where the name will not conflict, maybe under your own assets folder.</td>
+</tr>
+<tr>
+<td align="right">screenshots</td>
+<td align="center">[string]</td>
+<td align="center"><code>[]</code></td>
+<td align="left">A list of images to be shown on the info page. Currently unimplemented.</td>
+</tr>
+<tr>
+<td align="right">parent</td>
+<td align="center">string</td>
+<td align="center"><code>""</code></td>
+<td align="left">The modid of a parent mod, if applicable. Using this allows modules of another mod to be listed under it in the info page, like BuildCraft.</td>
+</tr>
+<tr>
+<td align="right">useDependencyInformation</td>
+<td align="center">boolean</td>
+<td align="center"><code>false</code></td>
+<td align="left">If true and <code>Mod.useMetadata</code>, the below 3 lists of dependencies will be used. If not, they do nothing.</td>
+</tr>
+<tr>
+<td align="right">requiredMods</td>
+<td align="center">[string]</td>
+<td align="center"><code>[]</code></td>
+<td align="left">A list of modids. If one is missing, the game will crash. This <strong>does not affect the <em>ordering</em> of mod loading!</strong> To specify ordering as well as requirement, have a coupled entry in <code>dependencies</code>.</td>
+</tr>
+<tr>
+<td align="right">dependencies</td>
+<td align="center">[string]</td>
+<td align="center"><code>[]</code></td>
+<td align="left">A list of modids. All of the listed mods will load <em>before</em> this one. If one is not present, nothing happens.</td>
+</tr>
+<tr>
+<td align="right">dependants</td>
+<td align="center">[string]</td>
+<td align="center"><code>[]</code></td>
+<td align="left">A list of modids. All of the listed mods will load <em>after</em> this one. If one is not present, nothing happens.</td>
+</tr>
+</tbody>
+</table>
+<p>A good example <code>mcmod.info</code> that uses many of these properties is <a href="https://gist.github.com/anonymous/05ad9a1e0220bbdc25caed89ef0a22d2">BuildCraft</a>.</p>
+<h2 id="the-mod-file">The Mod File<a class="headerlink" href="#the-mod-file" title="Permanent link"> </a></h2>
+<p>Generally, we&rsquo;ll start with a file named after your mod, and put into your package. This is the <em>entry point</em> to your mod
+and will contain some special indicators marking it as such.</p>
+<h2 id="what-is-mod">What is <code>@Mod</code>?<a class="headerlink" href="#what-is-mod" title="Permanent link"> </a></h2>
+<p>This is an annotation indicating to the Forge Mod Loader that the class is a Mod entry point. It contains various metadata about the mod. It also designates the class that will receive <code>@EventHandler</code> events.</p>
+<p>Here is a table of the properties of <code>@Mod</code>:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Property</th>
+<th align="center">Type</th>
+<th align="center">Default</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">modid</td>
+<td align="center">String</td>
+<td align="center">required</td>
+<td align="left">A unique identifier for the mod. It must be lowercased, and will be truncated to 64 characters in length.</td>
+</tr>
+<tr>
+<td align="right">name</td>
+<td align="center">String</td>
+<td align="center">&rdquo;&ldquo;</td>
+<td align="left">A user-friendly name for the mod.</td>
+</tr>
+<tr>
+<td align="right">version</td>
+<td align="center">String</td>
+<td align="center">&rdquo;&ldquo;</td>
+<td align="left">The version of the mod. It should be just numbers seperated by dots, ideally conforming to <a href="https://semver.org/">Semantic Versioning</a>. Even if <code>useMetadata</code> is set to <code>true</code>, it&rsquo;s a good idea to put the version here anyways.</td>
+</tr>
+<tr>
+<td align="right">dependencies</td>
+<td align="center">String</td>
+<td align="center">&rdquo;&ldquo;</td>
+<td align="left">Dependencies for the mod. The specification is described in the Forge <code>@Mod</code> javadoc:<br><blockquote><p>A dependency string can start with the following four prefixes: <code>"before"</code>, <code>"after"</code>, <code>"required-before"</code>, <code>"required-after"</code>; then <code>":"</code> and the <code>modid</code>.</p><p>Optionally, a version range can be specified for the mod by adding <code>"@"</code> and then the version range.<a href="#version-ranges">*</a></p><p>If a &ldquo;required&rdquo; mod is missing, or a mod exists with a version outside the specified range, the game will not start and an error screen will tell the player which versions are required.</p></blockquote></td>
+</tr>
+<tr>
+<td align="right">useMetadata</td>
+<td align="center">boolean</td>
+<td align="center">false</td>
+<td align="left">If set to true, properties in <code>@Mod</code> will be overridden by <code>mcmod.info</code>.</td>
+</tr>
+<tr>
+<td align="right">clientSideOnly<br>serverSideOnly</td>
+<td align="center">boolean<br>boolean</td>
+<td align="center">false<br>false</td>
+<td align="left">If either is set to <code>true</code>, the jar will be skipped on the other side, and the mod will not load. If both are true, the game crashes.</td>
+</tr>
+<tr>
+<td align="right">acceptedMinecraftVersions</td>
+<td align="center">String</td>
+<td align="center">&rdquo;&ldquo;</td>
+<td align="left">The version range of Minecraft the mod will run on.<a href="#version-ranges">*</a> An empty string will match all versions.</td>
+</tr>
+<tr>
+<td align="right">acceptableRemoteVersions</td>
+<td align="center">String</td>
+<td align="center">&rdquo;&ldquo;</td>
+<td align="left">Specifies a remote version range that this mod will accept as valid.<a href="#version-ranges">*</a> <code>""</code> Matches the current version, and <code>"*"</code> matches all versions. Note that <code>"*"</code> matches even when the mod is not present on the remote side at all.</td>
+</tr>
+<tr>
+<td align="right">acceptableSaveVersions</td>
+<td align="center">String</td>
+<td align="center">&rdquo;&ldquo;</td>
+<td align="left">A version range specifying compatible save version information.<a href="#version-ranges">*</a> If you follow an unusual version convention, use <code>SaveInspectionHandler</code> instead.</td>
+</tr>
+<tr>
+<td align="right">certificateFingerprint</td>
+<td align="center">String</td>
+<td align="center">&rdquo;&ldquo;</td>
+<td align="left">See the tutorial on <a href="../../concepts/jarsigning/index.htm">jar signing</a>.</td>
+</tr>
+<tr>
+<td align="right">modLanguage</td>
+<td align="center">String</td>
+<td align="center">&ldquo;java&rdquo;</td>
+<td align="left">The programming language the mod is written in. Can be either <code>"java"</code> or <code>"scala"</code>.</td>
+</tr>
+<tr>
+<td align="right">modLanguageAdapter</td>
+<td align="center">String</td>
+<td align="center">&rdquo;&ldquo;</td>
+<td align="left">Path to a language adapter for the mod. The class must have a default constructor and must implement <code>ILanguageAdapter</code>. If it doesn&rsquo;t, Forge will crash. If set, overrides <code>modLanguage</code>.</td>
+</tr>
+<tr>
+<td align="right">canBeDeactivated</td>
+<td align="center">boolean</td>
+<td align="center">false</td>
+<td align="left">This is not implemented, but if the mod could be deactivated (e.g. a minimap mod), this would be set to <code>true</code> and the mod would <a href="../../events/intro/index.htm#creating-an-event-handler">receive</a> <code>FMLDeactivationEvent</code> to perform cleanup tasks.</td>
+</tr>
+<tr>
+<td align="right">guiFactory</td>
+<td align="center">String</td>
+<td align="center">&rdquo;&ldquo;</td>
+<td align="left">Path to the mod&rsquo;s GUI factory, if one exists. GUI factories are used to make custom config screens, and must implement <code>IModGuiFactory</code>. For an example, look at <code>FMLConfigGuiFactory</code>.</td>
+</tr>
+<tr>
+<td align="right">updateJSON</td>
+<td align="center">String</td>
+<td align="center">&rdquo;&ldquo;</td>
+<td align="left">URL to an update JSON file. See <a href="../autoupdate/index.htm">Forge Update Checker</a></td>
+</tr>
+</tbody>
+</table>
+<p><a name="version-ranges" style="color: inherit; text-decoration: inherit">* All version ranges use the <a href="https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html">Maven Version Range Specification</a>.</p>
+<p>You can find an example mod in the <a href="https://files.minecraftforge.net/">Forge src download</a>.</p>
+<h2 id="keeping-your-code-clean-using-sub-packages">Keeping Your Code Clean Using Sub-packages<a class="headerlink" href="#keeping-your-code-clean-using-sub-packages" title="Permanent link"> </a></h2>
+<p>Rather than clutter up a single class and package with everything, it is recommended you break your mod into subpackages.</p>
+<p>A common subpackage strategy has packages for <code>common</code> and <code>client</code> code, which is code that can be run on server/client and client, respectively. Inside the <code>common</code> package would go things like Items, Blocks, and Tile Entities (which can each in turn be another subpackage). Things like GUIs and Renderers would go inside the <code>client</code> package.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This package style is only a suggestion, though it is a commonly used style. Feel free to use your own packaging system.</p>
+</div>
+<p>By keeping your code in clean subpackages, you can grow your mod much more organically.</p>
+<h2 id="class-naming-schemes">Class Naming Schemes<a class="headerlink" href="#class-naming-schemes" title="Permanent link"> </a></h2>
+<p>A common class naming scheme allows easier deciphering of what a class is, and also makes it easier for someone developing with your mod to find things.</p>
+<p>For Example:</p>
+<ul>
+<li>An <code>Item</code> called <code>PowerRing</code> would be in an <code>item</code> package, with a class name of <code>ItemPowerRing</code>.</li>
+<li>A <code>Block</code> called <code>NotDirt</code> would be in a <code>block</code> package, with a class name of <code>BlockNotDirt</code>.</li>
+<li>Finally, a <code>TileEntity</code> for a block called <code>SuperChewer</code> would be a <code>tile</code> or <code>tileentity</code> package, with a class name of <code>TileSuperChewer</code>.</li>
+</ul>
+<p>Prepending your class names with what <em>kind</em> of object they are makes it easier to figure out what a class is, or guess the class for an object.</p>
+            
+        </article>
+        
+    </div>
+</main>
+<div class="wrapper">
+    <footer>
+        Built with <a href="https://www.mkdocs.org">MkDocs</a> using a custom theme. Hosted by <a href="https://readthedocs.org">Read the Docs</a>.
+        <div class="theme-switch-wrapper">
+            Enable Dark Theme
+            <label class="theme-switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

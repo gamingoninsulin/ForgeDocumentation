@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Forge Documentation</title>
+      
+      <link rel="apple-touch-icon" sizes="180x180" href="../../static/images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" href="../../static/images/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="../../static/images/favicon-16x16.png" sizes="16x16">
+      <link rel="manifest" href="../../static/images/manifest.json">
+      <link rel="mask-icon" href="../../static/images/safari-pinned-tab.svg" color="#5bbad5">
+      <link rel="shortcut icon" href="../../static/images/favicon.ico">
+
+      <meta name="apple-mobile-web-app-title" content="Forge Docs">
+      <meta name="application-name" content="Forge Docs">
+      <meta name="msapplication-config" content="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="stylesheet" href="../../a1f20be65b-1.css">
+      <link rel="stylesheet" href="css/styles_dark.css?version=2" data-theme="dark">
+      <link rel="stylesheet" href="css/styles_light.css?version=2" data-theme="light">
+      <link href="../../static/css/badge_only-1.css" rel="stylesheet">
+      <link href="../../static/css/readthedocs-doc-embed-1.css" rel="stylesheet">
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js/theme-switch.js"></script>
+      <script type="text/javascript" src="../../ajax/libs/jquery/2.2.4/jquery.min-1.js"></script>
+      <script type="text/javascript" src="../../ajax/libs/highlight.js/9.12.0/highlight.min-1.js"></script>
+      <script type="text/javascript" src="../../ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min-1.js"></script>
+      <script type="text/javascript" src="../../ajax/libs/jScrollPane/2.0.23/script/jquery.jscrollpane.min-1.js"></script>
+      <script type="text/javascript" src="../../ajax/libs/stickyfill/1.1.4/stickyfill.min-1.js"></script>
+      <script type="text/javascript" src="js/theme.js"></script>
+      <script>var base_url = '.';</script>
+      <script src="readthedocs-data.js"></script>
+      <script src="../../static/core/js/readthedocs-doc-embed-1.js"></script>
+      <script src="../../static/javascript/readthedocs-analytics-1.js"></script>
+      <script src="search/require.js"></script>
+      <script src="search/search.js"></script>
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <header>
+         <div class="wrapper">
+            <div class="logo">
+               <a href="#" class="open-sidebar"><i class="fa fa-bars"></i></a>
+               <a href="." class="logo-image"><img src="./images/logo.svg" width="244"></a>
+            </div>
+            <nav>
+               <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Versions
+                  </button>
+                  <ul class="dropdown-menu">
+
+                    <li><a class="dropdown-item " href="../1.20.x/index.htm">1.20.x</a></li>
+                    <li><a class="dropdown-item " href="../1.19.x/index.htm">1.19.x</a></li>
+                    <li><a class="dropdown-item " href="../1.18.x/index.htm">1.18.x</a></li>
+                    <li><a class="dropdown-item " href="../1.17.x/index.htm">1.17.x</a></li>
+                    <li><a class="dropdown-item " href="../1.16.x/index.htm">1.16.x</a></li>
+                    <li><a class="dropdown-item " href="../1.15.x/index.htm">1.15.x</a></li>
+                    <li><a class="dropdown-item " href="../1.14.x/index.htm">1.14.x</a></li>
+                    <li><a class="dropdown-item " href="../1.13.x/index.htm">1.13.x</a></li>
+                    <li><a class="dropdown-item active" href="./index.htm">1.12.x</a></li>
+                    
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <main class="wrapper sidebar-wrapper">
+         <div class="sidebar-left sidebar-sticky">
+            <aside>
+               <section class="sidebar-nav">
+                  <h2 class="sidebar-heading">
+                     <a href="#" class="close-sidebar"><i class="fa fa-bars"></i></a>Current Version 1.12.X
+                     <!-- <form class="version-selection">
+                        <label for="version-selection-dropdown">Version:</label>
+                        <select id="version-selection-dropdown" class="version-selection-dropdown" onchange="location = this.value;">
+                            
+                            <option value="https://mcforge.readthedocs.io/en/1.16.x" selected="">1.16.x</option>
+                            
+                            <option value="https://mcforge.readthedocs.io/en/1.18.x">1.18.x</option>
+                            
+                        </select>
+                        </form> -->
+                  </h2>
+                  <ul class="section-content scroll-pane">
+                     <li class="elem-active elem-toc">
+                        <a href="#minecraftforge-documentation" class="elem-text">Home</a>
+                        <ul class="table-of-contents">
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="styleguide/index.htm" class="elem-text">Style Guide</a>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Getting Started</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="gettingstarted/index.htm" class="elem-text">Home</a>
+                           </li>
+                           <li>
+                              <a href="gettingstarted/structuring/index.htm" class="elem-text">Structuring Your Mod</a>
+                           </li>
+                           <li>
+                              <a href="gettingstarted/autoupdate/index.htm" class="elem-text">Forge Update Checker</a>
+                           </li>
+                           <li>
+                              <a href="gettingstarted/dependencymanagement/index.htm" class="elem-text">Dependency Management</a>
+                           </li>
+                           <li>
+                              <a href="gettingstarted/debugprofiler/index.htm" class="elem-text">Debug Profiler</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Concepts</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="concepts/sides/index.htm" class="elem-text">Sides</a>
+                           </li>
+                           <li>
+                              <a href="concepts/resources/index.htm" class="elem-text">Resources</a>
+                           </li>
+                           <li>
+                              <a href="concepts/registries/index.htm" class="elem-text">Registries</a>
+                           </li>
+                           <li>
+                              <a href="concepts/jarsigning/index.htm" class="elem-text">The Fingerprint Violation Event</a>
+                           </li>
+                           <li>
+                              <a href="concepts/internationalization/index.htm" class="elem-text">Internationalization and localization</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Blocks</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="blocks/blocks/index.htm" class="elem-text">Home</a>
+                           </li>
+                           <li>
+                              <a href="blocks/states/index.htm" class="elem-text">Intro to Blockstates</a>
+                           </li>
+                           <li>
+                              <a href="blocks/interaction/index.htm" class="elem-text">Interaction</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Animation API</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="animation/intro/index.htm" class="elem-text">Intro to the Animation API</a>
+                           </li>
+                           <li>
+                              <a href="animation/armature/index.htm" class="elem-text">Armatures</a>
+                           </li>
+                           <li>
+                              <a href="animation/asm/index.htm" class="elem-text">Animation State Machines</a>
+                           </li>
+                           <li>
+                              <a href="animation/implementing/index.htm" class="elem-text">Using the API</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Tile Entities</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="tileentities/tileentity/index.htm" class="elem-text">Home</a>
+                           </li>
+                           <li>
+                              <a href="tileentities/tesr/index.htm" class="elem-text">Special Renderer</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Items</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="items/items/index.htm" class="elem-text">Home</a>
+                           </li>
+                           <li>
+                              <a href="items/loot_tables/index.htm" class="elem-text">Loot Tables</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Models</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="models/introduction/index.htm" class="elem-text">Intro to Models</a>
+                           </li>
+                           <li>
+                              <a href="models/files/index.htm" class="elem-text">Model Files</a>
+                           </li>
+                           <li class="elem-parent">
+                              <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Blockstates</a>
+                              <ul class="nav-collapsible ">
+                                 <li>
+                                    <a href="models/blockstates/introduction/index.htm" class="elem-text">Intro to Blockstate JSONs</a>
+                                 </li>
+                                 <li>
+                                    <a href="models/blockstates/forgeBlockstates/index.htm" class="elem-text">Forge Blockstate JSON</a>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a href="models/using/index.htm" class="elem-text">Connecting Blocks and Items to Models</a>
+                           </li>
+                           <li>
+                              <a href="models/color/index.htm" class="elem-text">Coloring Textures</a>
+                           </li>
+                           <li>
+                              <a href="models/overrides/index.htm" class="elem-text">Item Property Overrides</a>
+                           </li>
+                           <li class="elem-parent">
+                              <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Advanced Models</a>
+                              <ul class="nav-collapsible ">
+                                 <li>
+                                    <a href="models/advanced/introduction/index.htm" class="elem-text">Intro to Advanced Models</a>
+                                 </li>
+                                 <li>
+                                    <a href="models/advanced/imodel/index.htm" class="elem-text">IModel</a>
+                                 </li>
+                                 <li>
+                                    <a href="models/advanced/imodelstate%20part/index.htm" class="elem-text">IModelState and IModelPart</a>
+                                 </li>
+                                 <li>
+                                    <a href="models/advanced/ibakedmodel/index.htm" class="elem-text">IBakedModel</a>
+                                 </li>
+                                 <li>
+                                    <a href="models/advanced/extended-blockstates/index.htm" class="elem-text">Extended Blockstates</a>
+                                 </li>
+                                 <li>
+                                    <a href="models/advanced/perspective/index.htm" class="elem-text">Perspective</a>
+                                 </li>
+                                 <li>
+                                    <a href="models/advanced/itemoverridelist/index.htm" class="elem-text">ItemOverrideList</a>
+                                 </li>
+                                 <li>
+                                    <a href="models/advanced/icustommodelloader/index.htm" class="elem-text">ICustomModelLoader</a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Rendering</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="rendering/teisr/index.htm" class="elem-text">TileEntityItemStackRenderer</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Events</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="events/intro/index.htm" class="elem-text">Basic Usage</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Networking</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="networking/index.htm" class="elem-text">Home</a>
+                           </li>
+                           <li>
+                              <a href="networking/overview/index.htm" class="elem-text">Overview</a>
+                           </li>
+                           <li>
+                              <a href="networking/simpleimpl/index.htm" class="elem-text">SimpleImpl</a>
+                           </li>
+                           <li>
+                              <a href="networking/entities/index.htm" class="elem-text">Entities</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Data Storage</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="datastorage/capabilities/index.htm" class="elem-text">Capabilities</a>
+                           </li>
+                           <li>
+                              <a href="datastorage/worldsaveddata/index.htm" class="elem-text">World Saved Data</a>
+                           </li>
+                           <li>
+                              <a href="datastorage/extendedentityproperties/index.htm" class="elem-text">Extended Entity Properties</a>
+                           </li>
+                           <li>
+                              <a href="config/annotations/index.htm" class="elem-text">Config Annotations</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Utilities</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="utilities/recipes/index.htm" class="elem-text">Recipes</a>
+                           </li>
+                           <li>
+                              <a href="utilities/oredictionary/index.htm" class="elem-text">OreDictionary</a>
+                           </li>
+                           <li>
+                              <a href="utilities/permissionapi/index.htm" class="elem-text">PermissionAPI</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Effects</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="effects/sounds/index.htm" class="elem-text">Sounds</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Conventions</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="conventions/versioning/index.htm" class="elem-text">Versioning</a>
+                           </li>
+                           <li>
+                              <a href="conventions/locations/index.htm" class="elem-text">Locations</a>
+                           </li>
+                           <li>
+                              <a href="conventions/loadstages/index.htm" class="elem-text">Loading Stages</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="elem-parent">
+                        <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Contributing to Forge</a>
+                        <ul class="nav-collapsible ">
+                           <li>
+                              <a href="forgedev/index.htm" class="elem-text">Getting Started</a>
+                           </li>
+                           <li>
+                              <a href="forgedev/prguidelines/index.htm" class="elem-text">PR Guidelines</a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </section>
+            </aside>
+         </div>
+         <div class="sidebar-sticky-wrapper-content">
+            <article class="docs-entry">
+               <h1 id="minecraftforge-documentation">MinecraftForge Documentation<a class="headerlink" href="#minecraftforge-documentation" title="Permanent link"> </a></h1>
+               <p>This is the official documentation for <a href="http://minecraftforge.net">MinecraftForge</a>, the Minecraft modding API.</p>
+               <p>This documentation is <em>only</em> for Forge, <strong>this is not a Java tutorial</strong>.</p>
+               <p>If you would like to contribute to the docs, read <a href="contributing/index.htm">Contributing to the Docs</a>.</p>
+            </article>
+         </div>
+      </main>
+      <div class="wrapper">
+         <footer>
+            Built with <a href="../../index.htm">MkDocs</a> using a custom theme. Hosted by <a href="../../index-1.htm">Read the Docs</a>.
+            <!-- <div class="theme-switch-wrapper">
+               Enable Dark Theme
+               <label class="theme-switch">
+               <input type="checkbox">
+               <span class="slider round"></span>
+               </label>
+            </div> -->
+         </footer>
+      </div>
+
+       <!-- Bootstrap -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

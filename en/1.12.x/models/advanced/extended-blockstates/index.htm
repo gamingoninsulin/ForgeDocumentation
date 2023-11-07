@@ -1,0 +1,896 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Extended Blockstates - Forge Documentation</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_manifest.json">
+    <link rel="mask-icon" href="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Forge Docs">
+    <meta name="application-name" content="Forge Docs">
+    <meta name="msapplication-config" content="https://www.minecraftforge.net/forum/uploads/set_resources_3/247441864ab051a2bd22c960e8e7b8b5_browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="../../../../../a1f20be65b.css">
+    <link rel="stylesheet" href="../../../css/styles_dark.css?version=2" data-theme="dark">
+    <link rel="stylesheet" href="../../../css/styles_light.css?version=2" data-theme="light">
+
+    
+    <link href="../../../../../static/css/badge_only.css" rel="stylesheet">
+    
+    <link href="../../../../../static/css/readthedocs-doc-embed.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="../../../js/theme-switch.js"></script>
+
+    <script type="text/javascript" src="../../../../../ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../../ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="../../../../../ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="../../../../../ajax/libs/jScrollPane/2.0.23/script/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="../../../../../ajax/libs/stickyfill/1.1.4/stickyfill.min.js"></script>
+    <script type="text/javascript" src="../../../js/theme.js"></script>
+
+    <script>var base_url = '../../..';</script>
+    
+    <script src="../../../readthedocs-data.js"></script>
+    
+    <script src="../../../../../static/core/js/readthedocs-doc-embed.js"></script>
+    
+    <script src="../../../../../static/javascript/readthedocs-analytics.js"></script>
+    
+    <script src="../../../search/require.js"></script>
+    
+    <script src="../../../search/search.js"></script>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="#" class="open-sidebar"><i class="fa fa-bars"></i></a>
+            <a href="../../../index.htm" class="logo-image"><img src="../../../images/logo.svg" width="244"></a>
+        </div>
+        <nav>
+            <ul class="links clearfix">
+                <li><a href="../../../../../index-19.htm">Forums</a></li>
+            </ul>
+        </nav>
+        
+        <form class="search" action="../../../search.html" method="get">
+            <input type="submit" value="&#xf002;">
+            <div class="search-field">
+                <input type="search" title="Search" name="q" placeholder="Search...">
+            </div>
+        </form>
+        
+    </div>
+</header>
+<main class="wrapper sidebar-wrapper">
+    <div class="sidebar-left sidebar-sticky">
+        <aside>
+            <section class="sidebar-nav">
+                <h2 class="sidebar-heading">
+                    <a href="#" class="close-sidebar"><i class="fa fa-bars"></i></a> Navigation
+                    <form class="version-selection">
+                        <label for="version-selection-dropdown">Version:</label>
+                        <select id="version-selection-dropdown" class="version-selection-dropdown" onchange="location = this.value;">
+                            
+                            <option value="https://mcforge.readthedocs.io/en/1.13.x">1.13.x</option>
+                            
+                            <option value="https://mcforge.readthedocs.io/en/latest" selected="">1.12.x</option>
+                            
+                        </select>
+                    </form>
+                </h2>
+                <ul class="section-content scroll-pane">
+                    
+                    
+<li>
+    
+    <a href="../../../index.htm" class="elem-text">Home</a>
+    
+    
+</li>
+
+                    
+                    
+<li>
+    
+    <a href="../../../styleguide/index.htm" class="elem-text">Style Guide</a>
+    
+    
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Getting Started</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../gettingstarted/index.htm" class="elem-text">Home</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../gettingstarted/structuring/index.htm" class="elem-text">Structuring Your Mod</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../gettingstarted/autoupdate/index.htm" class="elem-text">Forge Update Checker</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../gettingstarted/dependencymanagement/index.htm" class="elem-text">Dependency Management</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../gettingstarted/debugprofiler/index.htm" class="elem-text">Debug Profiler</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Concepts</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../concepts/sides/index.htm" class="elem-text">Sides</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../concepts/resources/index.htm" class="elem-text">Resources</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../concepts/registries/index.htm" class="elem-text">Registries</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../concepts/jarsigning/index.htm" class="elem-text">The Fingerprint Violation Event</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../concepts/internationalization/index.htm" class="elem-text">Internationalization and localization</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Blocks</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../blocks/blocks/index.htm" class="elem-text">Home</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../blocks/states/index.htm" class="elem-text">Intro to Blockstates</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../blocks/interaction/index.htm" class="elem-text">Interaction</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Animation API</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../animation/intro/index.htm" class="elem-text">Intro to the Animation API</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../animation/armature/index.htm" class="elem-text">Armatures</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../animation/asm/index.htm" class="elem-text">Animation State Machines</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../animation/implementing/index.htm" class="elem-text">Using the API</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Tile Entities</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../tileentities/tileentity/index.htm" class="elem-text">Home</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../tileentities/tesr/index.htm" class="elem-text">Special Renderer</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Items</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../items/items/index.htm" class="elem-text">Home</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../items/loot_tables/index.htm" class="elem-text">Loot Tables</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Models</a>
+    
+    <ul class="nav-collapsible nav-collapsible-open">
+        
+        
+<li>
+    
+    <a href="../../introduction/index.htm" class="elem-text">Intro to Models</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../files/index.htm" class="elem-text">Model Files</a>
+    
+    
+</li>
+
+        
+        
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Blockstates</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../blockstates/introduction/index.htm" class="elem-text">Intro to Blockstate JSONs</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../blockstates/forgeBlockstates/index.htm" class="elem-text">Forge Blockstate JSON</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../using/index.htm" class="elem-text">Connecting Blocks and Items to Models</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../color/index.htm" class="elem-text">Coloring Textures</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../overrides/index.htm" class="elem-text">Item Property Overrides</a>
+    
+    
+</li>
+
+        
+        
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Advanced Models</a>
+    
+    <ul class="nav-collapsible nav-collapsible-open">
+        
+        
+<li>
+    
+    <a href="../introduction/index.htm" class="elem-text">Intro to Advanced Models</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../imodel/index.htm" class="elem-text">IModel</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../imodelstate%20part/index.htm" class="elem-text">IModelState and IModelPart</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../ibakedmodel/index.htm" class="elem-text">IBakedModel</a>
+    
+    
+</li>
+
+        
+        
+<li class="elem-active elem-toc">
+    
+    <a href="#extended-blockstates" class="elem-text">Extended Blockstates</a>
+    
+    
+    <ul class="table-of-contents">
+        
+        
+        
+        <li class="toc-subitem"><a href="#why-extended-blockstates">Why Extended Blockstates</a></li>
+        
+        <li class="toc-subitem"><a href="#declaring-unlisted-properties">Declaring Unlisted Properties</a></li>
+        
+        <li class="toc-subitem"><a href="#filling-extended-states">Filling Extended States</a></li>
+        
+        <li class="toc-subitem"><a href="#using-extended-states">Using Extended States</a></li>
+        
+        
+    </ul>
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../perspective/index.htm" class="elem-text">Perspective</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../itemoverridelist/index.htm" class="elem-text">ItemOverrideList</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../icustommodelloader/index.htm" class="elem-text">ICustomModelLoader</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Rendering</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../rendering/teisr/index.htm" class="elem-text">TileEntityItemStackRenderer</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Events</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../events/intro/index.htm" class="elem-text">Basic Usage</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Networking</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../networking/index.htm" class="elem-text">Home</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../networking/overview/index.htm" class="elem-text">Overview</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../networking/simpleimpl/index.htm" class="elem-text">SimpleImpl</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../networking/entities/index.htm" class="elem-text">Entities</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Data Storage</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../datastorage/capabilities/index.htm" class="elem-text">Capabilities</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../datastorage/worldsaveddata/index.htm" class="elem-text">World Saved Data</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../datastorage/extendedentityproperties/index.htm" class="elem-text">Extended Entity Properties</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../config/annotations/index.htm" class="elem-text">Config Annotations</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Utilities</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../utilities/recipes/index.htm" class="elem-text">Recipes</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../utilities/oredictionary/index.htm" class="elem-text">OreDictionary</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../utilities/permissionapi/index.htm" class="elem-text">PermissionAPI</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Effects</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../effects/sounds/index.htm" class="elem-text">Sounds</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Conventions</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../conventions/versioning/index.htm" class="elem-text">Versioning</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../conventions/locations/index.htm" class="elem-text">Locations</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../conventions/loadstages/index.htm" class="elem-text">Loading Stages</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                    
+<li class="elem-parent">
+    
+    <a href="#" class="elem-text toggle-collapsible"><span class="fa fa-plus collapsible-icon"></span> Contributing to Forge</a>
+    
+    <ul class="nav-collapsible ">
+        
+        
+<li>
+    
+    <a href="../../../forgedev/index.htm" class="elem-text">Getting Started</a>
+    
+    
+</li>
+
+        
+        
+<li>
+    
+    <a href="../../../forgedev/prguidelines/index.htm" class="elem-text">PR Guidelines</a>
+    
+    
+</li>
+
+        
+    </ul>
+</li>
+
+                    
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <div class="sidebar-sticky-wrapper-content">
+        <article class="docs-entry">
+            
+            <h1 id="extended-blockstates">Extended Blockstates<a class="headerlink" href="#extended-blockstates" title="Permanent link"> </a></h1>
+<p>Extended blockstates provide a way for blocks to pass arbitrary data to their models. Ordinary blockstates and properties occupy only a fixed set of possible states, while extended states can form infinite sets. This accomplished through the use of unlisted properties (<code>IUnlistedProperty&lt;V&gt;</code>), extended block states (<code>IExtendedBlockState</code>), and extended block state containers (<code>ExtendedBlockState</code>).</p>
+<p>Ordinary block state containers (<code>BlockStateContainer</code>) take a set of listed properties (<code>IProperty&lt;V&gt;</code>) that define all possible values for themselves and use those to create all possible combinatons of values. These combinations are then turned into <code>IBlockState</code>s and stored in the finite set of all possible states. The properties are called &ldquo;listed&rdquo; as they appear on the F3 debug screen, all the way to the right.</p>
+<p>Extended block state containers take a set of listed properties, and also a set of <em>unlisted</em> properties. Unlisted properties&rsquo; values can be anything that matches their type, and are not limited to a finite set. However, values are still required to satisfy the predicate <code>IUnlistedProperty::isValid</code>. The listed properties are again used to create the set of states, this time <code>IExtendedBlockState</code>s, but the unlisted properties remain unset. The unlisted properties are only set when <code>IExtendedBlockState::withProperty</code> is called to do so.</p>
+<p>Most of the methods on <code>IExtendedBlockState</code> are self-explanatory, maybe with the exception of <code>getClean</code>. <code>getClean</code> returns the base <code>IBlockState</code> with none of the unlisted properties set.</p>
+<h2 id="why-extended-blockstates">Why Extended Blockstates<a class="headerlink" href="#why-extended-blockstates" title="Permanent link"> </a></h2>
+<p>Why use extended blockstates at all? Why not simply pass an <code>IBlockAccess</code> and <code>BlockPos</code> into the rendering system directly and have the <a href="../ibakedmodel/index.htm"><code>IBakedModel</code></a> itself deal with it? Indeed, extended blockstates allow this to happen anyway! Why have the system at all when we could just do that? The reason is that it makes the system more flexible. External code can take an <code>IExtendedBlockState</code> and fill in some data by itself, overriding the block&rsquo;s own data. This allows that code to alter the model in ways that would be impossible if it was just a black box that took a world and a position and spat out some geometry.</p>
+<p>One such use case is advanced camouflaging blocks. The camouflaging block may have a tile entity that holds the <code>IBlockState</code> representative of the camouflagee, and an unlisted property to hold that state during rendering. This property can then be filled by <code>getExtendedState</code>. Finally, a custom <a href="../ibakedmodel/index.htm"><code>IBakedModel</code></a> can steal the model for that state and use it instead of using the uncamouflaged model.</p>
+<h2 id="declaring-unlisted-properties">Declaring Unlisted Properties<a class="headerlink" href="#declaring-unlisted-properties" title="Permanent link"> </a></h2>
+<p>Unlisted properties are declared in <code>Block.createBlockState</code>, the same place as regular (&ldquo;listed&rdquo;) properties. Instead of returning a <code>BlockStateContainer</code>, one must return an <code>ExtendedBlockState</code>. Forge provides a builder <code>BlockStateContainer.Builder</code>, which will automatically handle returning an <code>ExtendedBlockState</code> for you.</p>
+<p>Example:
+<pre class="highlight"><code class="language-Java">@Override
+public BlockStateContainer createBlockState() {
+    return new BlockStateContainer.Builder(this).add(LISTED_PROP).add(UNLISTED_PROP).build();
+}</code></pre>
+<p>Note that you do not need to set default values for your unlisted properties. </p>
+<h2 id="filling-extended-states">Filling Extended States<a class="headerlink" href="#filling-extended-states" title="Permanent link"> </a></h2>
+<p>Before an <code>IBlockState</code> is passed to an <code>IBakedModel</code>, it will always have <code>Block.getExtendedState</code> called on it first. In this method, you will give all your unlisted properties values. Assuming you registered at least one unlisted property in the previous section, the <code>IBlockState</code> parameter can be safely casted to <code>IExtendedBlockState</code>, which has a <code>withProperty</code> method for unlisted properties analogous to its listed property cousin. Here, you can query whatever you want from the World, the Tile Entity, etc. (with appropriate safety checks, of course) and insert it into the extended blockstate.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It is highly recommended that your unlisted property values be immutable. Baked model implementations will use the extended state and unlisted values on multiple threads, so any value must be used in a threadsafe manner. The easiest way is to simply make that information an immutable snapshot. Anything you might possibly want to know in your custom <code>IBakedModel</code>, you should be passing an immutable snapshot of through <code>Block.getExtendedState</code>.</p>
+</div>
+<p>Example:
+<pre class="highlight"><code class="language-Java">@Override
+public IExtendedBlockState getExtendedState(IBlockState state, IBlockAccess world, BlockPos pos) {
+    IExtendedBlockState ext = (IExtendedBlockState) state;
+    TileEntity te = world.getTileEntity(pos);
+    if (te instanceof MyTE) {
+        ext = ext.withProperty(UNLISTED_PROP, ((MyTE) te).getSomeImmutableData());
+    }
+    return ext;
+}</code></pre>
+<h2 id="using-extended-states">Using Extended States<a class="headerlink" href="#using-extended-states" title="Permanent link"> </a></h2>
+<p>In a custom <code>IBakedModel</code>, the <code>IBlockState</code> parameter passed to you will be exactly the object you returned in <code>Block.getExtendedState</code>, and you can pull data out of it and use it to affect your rendering as you wish.</p>
+<p>Here is a basic example of using an unlisted property to determine which model to render, assuming <code>UNLISTED_PROP</code> is an <code>IUnlistedProperty&lt;String&gt;</code>:
+<pre class="highlight"><code class="language-Java">// in custom IBakedModel
+private final Map&lt;String, IBakedModel&gt; submodels = new HashMap&lt;&gt;(); // populated in a custom manner out of the scope of this article
+
+@Override
+public List&lt;BakedQuad&gt; getQuads(@Nullable IBlockState state, EnumFacing facing, long rand) {
+    IBakedModel fallback = Minecraft.getMinecraft().getBlockRendererDispatcher().getBlockModelShapes().getModelManager().getMissingModel();
+    if (state == null)
+        return fallback.getQuads(state, facing, rand);
+
+    IExtendedBlockState ex = (IExtendedBlockState) state;
+    String id = ex.getValue(UNLISTED_PROP);
+    return submodels.getOrDefault(id, fallback).getQuads(state, facing, rand);
+}</code></pre>
+<p>Since there are no longer a fixed set of <code>IExtendedBlockState</code> generated at startup, comparisons involving an extended state must use <code>getClean()</code>, which is a method on <code>IExtendedBlockState</code> that returns the vanilla state (i.e. the fixed set of <code>IBlockState</code> with only the listed properties).
+<pre class="highlight"><code class="language-Java">IExtendedBlockState state = ...;
+IBlockState worldState = world.getBlockState(pos);
+if(state.getClean() == worldState) {
+    ...
+}</code></pre>
+            
+        </article>
+        
+    </div>
+</main>
+<div class="wrapper">
+    <footer>
+        Built with <a href="../../../../../index.htm">MkDocs</a> using a custom theme. Hosted by <a href="../../../../../index-1.htm">Read the Docs</a>.
+        <div class="theme-switch-wrapper">
+            Enable Dark Theme
+            <label class="theme-switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
