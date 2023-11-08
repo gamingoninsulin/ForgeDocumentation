@@ -1,14 +1,22 @@
 <div align="center">
   <h1>Link To This <a href="https://gamingoninsulin.github.io/ForgeDocumentation/">Website</a></h1>
+  
+  <br>
+  
   <h6>this site is forked with <a href="https://www.httrack.com/page/1/en/index.html">HTTrack</a> and will make an overhaul to input better code snippets and a basic JAVA Turorial.</h6>
   <p>This project started on <strong>07-11-2023</strong> keep in mind this is in <strong>EARLY ALPHA</strong> phase </p>
 </div>
-<div align= right>
+  
+  <br>
+  
+  <div align="center">
     <hr>
-  CONTACT INFORMATION
-  <hr>
-</div>
-<br>
+    <h3>CONTACT INFORMATION</h3>
+    <hr>
+  </div>
+<div align= right>
+
+  <br>
 
 <div align="right">
  <img src="./static/images/gamingoninsulin.png" alt="gamingOnInsulin Profile Image" width="100" hight="100"/> <br>
