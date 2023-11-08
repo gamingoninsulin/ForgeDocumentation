@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Link To This <a href="https://gamingoninsulin.github.io/ForgeDocumentation/">Website</a></h1>
+  <h1>Link To This <a href="https://gamingoninsulin.github.io/ForgeDocumentation/index.htm">Website</a></h1>
   
   <br>
   
